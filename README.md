@@ -13,7 +13,7 @@ Users can enter in a location or address and restaurants will be displayed on a 
 #
 
 ## Check it Out Here:
-https://cynthialu42.github.io/Recipe/index.html
+https://bcimbali.github.io/Recipe/
 #
 
 ## Screenshots:

@@ -26,7 +26,7 @@ $(".js-submit").on("click", function(){
 
     let addressInput = $(".js-search").val().trim();
     let address = encodeURIComponent(addressInput);
-    let queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyBsoxYLBOzXA90YtKwlMYslED2h0Hf7v7A";
+    let queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAh3u2nbirPF0_Or0rv4ePb0RmzeI-IrsY";
 
     //Access apps API with ajax
 

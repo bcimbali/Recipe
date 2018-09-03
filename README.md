@@ -18,7 +18,7 @@ https://bcimbali.github.io/Recipe/
 
 ## Screenshots:
 
-![alt text](https://github.com/cynthialu42/Recipe/blob/master/images/Recipe-index-screenshot.png?raw=true)
+![alt text](https://res.cloudinary.com/bcimbali/image/upload/dpr_auto,c_scale,f_auto,q_auto:eco,w_900/v1535999349/Portfolio/recipe-retina-3b.png)
 ![alt text](https://github.com/cynthialu42/Recipe/blob/master/images/Recipes-page-screenshot.png?raw=true)
 ![alt text](https://github.com/cynthialu42/Recipe/blob/master/images/Restaurant-page-screenshot.png?raw=true)
 

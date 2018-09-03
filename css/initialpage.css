@@ -7,7 +7,12 @@
     src: url('./../fonts/BrazilFood3.ttf') format('truetype');
 }
 body {
-    background: url("../images/basil-delicious-food-459469.jpg") no-repeat center center fixed;
+    /* background: url("../images/basil-delicious-food-459469.jpg") no-repeat center center fixed; */
+    background: #FDB26D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BB3D14, #FDB26D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BB3D14, #FDB26D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     background-size: cover;
     
 }
@@ -40,7 +45,7 @@ h1,p {
 }
 
 .transparent {
-    background-color: rgba(255,255,255,0.6);
+    /* background-color: rgba(255,255,255,0.6); */
     min-height: 100vh;
     width: 80%;
     margin: auto;

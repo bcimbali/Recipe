@@ -30,7 +30,6 @@ $(document).ready(function(){
 
     function removeBtn(){
         var removeIngr = $(this).attr("data-ingredient");
-        console.log(removeIngr);
         let index = 0;
         for (let i = 0; i < ingredientsList.length; i++){
             if (ingredientsList[i] === removeIngr){
@@ -49,7 +48,7 @@ $(document).ready(function(){
 
         // String version of our ingredient array
         let tempStrIngredientsList = ingredientsList.join(" ");
-        // console.log(strIngredientsList);
+
       
         // spaces replaced with %20
         let start = "&from=" + from;
@@ -61,10 +60,8 @@ $(document).ready(function(){
             url: queryURL,
             method: "GET"
         }).then(function(response){
-            console.log(response);
             $('#loading-image').addClass('hide');
             if (random == -1) {
-                console.log('random equals -1');
     
             for (let i = 0; i < response.hits.length; i++){
                 // Create a new div and save it to a variable called recipe
@@ -150,8 +147,6 @@ $(document).ready(function(){
 
         // If a user clicks to generate a random recipe...
         else {
-            console.log('it went to else');
-            console.log('random is: ' + random);
             let recipe = $("<div style='width: 18rem;'>");
             recipe.addClass('hover-fade card col-md-3 m-2 position-absolute roll-in-bottom');
             let img = $("<img>");
@@ -244,8 +239,6 @@ $(document).ready(function(){
             ingredientsList.push(ingredient);
             // Run createList, which appends all our ingredient buttons to the sidebar
             createList();
-            // Log the ingredient to the console
-            console.log(ingredient);
             // Empty the all of the recipe divs/cards in the right side js-recipes section
             $(".js-recipes").empty();
             // Run showRecipes, which queries our API with all the ingredients in our ingredientsList array
@@ -261,12 +254,10 @@ $(document).ready(function(){
         event.preventDefault();
         $('.js-recipes').empty();
         let randomNumber = Math.floor(Math.random() * 10);
-        // console.log('random number:' + randomNumber);
         showRecipes(from, to, randomNumber);
         $('.js-you-decide').addClass('hide');
         $('.js-results-back').removeClass('hide');
         $('.next').addClass('hide');
-        console.log('clicked on you decide');
     });
 
     $('.js-results-back').on('click', function(event) {
@@ -291,7 +282,6 @@ $(document).ready(function(){
 
     $('.js-next-button').on('click', function(event){
         event.preventDefault();
-        console.log('here');
         from += 10;
         to += 10;
         $(".js-recipes").empty();
